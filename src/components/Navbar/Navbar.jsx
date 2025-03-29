@@ -4,7 +4,7 @@ import Logo from '../../assets/Logo.png'
 const navbarLinks = [
     {
         id: 1,
-        title: "Nosotros",
+        title: "Reseñas",
         link: "#"
     },
     {
@@ -16,7 +16,7 @@ const navbarLinks = [
         id: 3,
         title: "¿Como comprar?",
         link: "#"
-    }
+    },
 ]
 
 const navbarSocialLinks = [
@@ -41,7 +41,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='fixed top-0 left-0 bg-[#F1E7E7] w-full z-50'>
+        <nav className='fixed top-0 left-0 bg-[#BE5985] w-full z-50 shadow'>
             <div className='flex justify-between items-center sm:px-12 sm:py-2 px-4 py-3'>
 
                 <div>
@@ -49,7 +49,7 @@ const Navbar = () => {
                 </div>
                 
                 {/* Boton hamburuesa */}
-                <button onClick={toggleMenu} className='md:hidden text-black'>
+                <button onClick={toggleMenu} className='md:hidden text-white'>
                     <svg className='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
 
                         {isOpen ? (<path
@@ -71,7 +71,7 @@ const Navbar = () => {
                     <ul className='flex sm:space-x-8 space-x-4'>
                         {navbarLinks.map((link) => (
                             <li key={link.id}>
-                                <a className='text-gray-600 sm:text-lg text-sm hover:text-[#E69DB8] transition-transform hover:scale-110 transform inline-block duration-300'
+                                <a className='text-white sm:text-lg text-sm hover:text-[#FFEDFA] transition-transform hover:scale-110 transform inline-block duration-300'
                                     href={link.link}>{link.title}</a>
                             </li>
                         ))}
@@ -88,7 +88,7 @@ const Navbar = () => {
                                     rel='noopener noreferrer'
                                     className='inline-block transition-transform hover:scale-125 transform duration-300'
                                     href={link.link}>
-                                    <i className={`${link.icon} sm:2xl text-lg text-gray-600 hover:text-[#E69DB8] transition-all duration-300`}></i>
+                                    <i className={`${link.icon} sm:2xl text-lg text-white hover:text-[#FFEDFA] transition-all duration-300`}></i>
                                 </a>
                             </li>
                         ))}
@@ -97,11 +97,11 @@ const Navbar = () => {
             </div>
 
             {/* Navbar movil */}
-            <div className={`md:hidden absolute w-full bg-[#F1E7E7] transition-all duration-300 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+            <div className={`md:hidden absolute w-full bg-[#BE5985] transition-all duration-300 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
                 <ul className='flex flex-col px-4 py-2'>
                     {navbarLinks.map((link) => (
                         <li key={link.id} className='py-2 text-center'>
-                            <a className='text-gray-600 hover:text-[#E69DB8]' onClick={() => setIsOpen(false)}
+                            <a className='text-white hover:text-[#E69DB8]' onClick={() => setIsOpen(false)}
                                 href={link.link}>{link.title}</a>
                         </li>
                     ))}
@@ -117,7 +117,7 @@ const Navbar = () => {
                                 href={link.link}
                                 onClick={() => setIsOpen(false)}
                             >
-                                <i className={`${link.icon} text-lg text-gray-600 hover:text-[#E69DB8]`}></i>
+                                <i className={`${link.icon} text-lg text-white hover:text-[#E69DB8]`}></i>
                             </a>
                         </li>
                     ))}
