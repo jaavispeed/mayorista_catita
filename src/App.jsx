@@ -4,10 +4,10 @@ import Hero from "./components/Hero/Hero"
 function App() {
 
   return (
-    <>
+    <div className="overflow-hidden min-h-screen">
     <Navbar />
     <Hero />
-    </>
+    </div>
   )
 }
 
