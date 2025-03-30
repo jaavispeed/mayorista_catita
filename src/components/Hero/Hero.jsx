@@ -12,7 +12,7 @@ const Hero = () => {
       
       {/* Contenedor de texto alineado a la izquierda */}
       <div className='text-left max-w-lg'>
-        <h1 className='text-4xl font-extrabold leading-[1.15] text-black sm:text-6xl' style={{ fontFamily: 'Caveat, cursive' }}>
+        <h1 className='text-4xl font-extrabold leading-[1.15] text-black sm:text-7xl' style={{ fontFamily: 'Caveat, cursive' }}>
           Mayorista Catita
           <br />
           <span className='bg-gradient-to-r from-pink-500 via-indigo-600 to-pink-500 bg-clip-text text-transparent'>
