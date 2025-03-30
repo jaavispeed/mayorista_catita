@@ -3,6 +3,8 @@ import Hero from "./components/Hero/Hero"
 import Information from "./components/Information/Information"
 import Testimonials from "./components/Testimonials/Testimonials"
 import Footer from "./components/Footer/Footer"
+import Slider from "./components/Slider/Slider"
+import { paymentMethods } from "./data/paymentMethods"
 function App() {
   return (
     <div className="overflow-hidden min-h-screen">
@@ -10,6 +12,12 @@ function App() {
       <div className="py-8">
         <Hero />
       </div>
+
+      <div className="py-8">
+        <Slider images={paymentMethods} />
+      </div>
+
+
       <div className="py-8">
         <Information />
       </div>
