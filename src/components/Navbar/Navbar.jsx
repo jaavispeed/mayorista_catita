@@ -5,17 +5,17 @@ const navbarLinks = [
     {
         id: 1,
         title: "Reseñas",
-        link: "#"
+        link: "#testimonials"
     },
     {
         id: 2,
         title: "Inicio",
-        link: "/"
+        link: "#"
     },
     {
         id: 3,
         title: "¿Como comprar?",
-        link: "#"
+        link: "#information"
     },
 ]
 
