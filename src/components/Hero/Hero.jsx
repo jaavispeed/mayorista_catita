@@ -1,6 +1,10 @@
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
-import ropa from '../../assets/imagensinfondo.png';
+import jeans from '../../assets/jeans.jpg';
+import Chaleco from '../../assets/Chaleco.jpg';
+import Crops from '../../assets/Crops.jpg';
+
+
 
 const Hero = () => {
   return (
@@ -32,10 +36,21 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Imagen en un círculo a la derecha */}
-      <div className='mt-10 md:mt-0 md:ml-10 flex justify-center'>
+      {/* Contenedor de círculos a la derecha */}
+      <div className='relative mt-10 md:mt-0 md:ml-10 flex justify-center'>
+        {/* Círculo principal */}
         <div className='w-60 h-60 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-pink-500 shadow-lg'>
-          <img src={ropa} alt='Ropa Mayorista Catita' className='w-full h-full object-cover' />
+          <img src={jeans} alt='Ropa Mayorista Catita' className='w-full h-full object-cover' />
+        </div>
+
+        {/* Círculo superior izquierdo con imagen más grande */}
+        <div className='absolute top-0 left-[-40px] w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-2 border-white shadow-lg'>
+          <img src={Chaleco} alt='Imagen 1' className='w-full h-full object-cover' />
+        </div>
+
+        {/* Círculo inferior derecho con imagen más grande */}
+        <div className='absolute bottom-[-40px] right-[-40px] w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-white shadow-lg'>
+          <img src={Crops} alt='Imagen 2' className='w-full h-full object-cover' />
         </div>
       </div>
     </section>
