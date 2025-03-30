@@ -4,11 +4,12 @@ import jeans from '../../assets/jeans.jpg';
 import Chaleco from '../../assets/Chaleco.jpg';
 import Crops from '../../assets/Crops.jpg';
 
-
-
 const Hero = () => {
   return (
-    <section id='hero' className='hero-section flex flex-col md:flex-row items-center justify-center min-h-screen px-6'>
+    <section 
+      id='hero' 
+      className='hero-section flex flex-col md:flex-row items-center justify-center min-h-screen px-6 bg-gradient-to-b from-transparent via-[#FFEDFA] to-transparent'>
+      
       {/* Contenedor de texto alineado a la izquierda */}
       <div className='text-left max-w-lg'>
         <h1 className='text-4xl font-extrabold leading-[1.15] text-black sm:text-6xl' style={{ fontFamily: 'Caveat, cursive' }}>
