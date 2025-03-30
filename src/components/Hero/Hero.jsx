@@ -25,15 +25,16 @@ const Hero = () => {
         </h2>
 
         <div className='mt-5'>
-          <a
-            href='https://www.whatsapp.com/catalog/56996189098/?app_absent=0'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 rounded-full px-4 py-2 text-base font-medium shadow border-black bg-[#BE5985] text-white w-fit'
-          >
-            <FaWhatsapp className='text-xl' />
-            <span>Catálogo</span>
-          </a>
+        <a
+  href='https://www.whatsapp.com/catalog/56996189098/?app_absent=0'
+  target='_blank'
+  rel='noopener noreferrer'
+  className='transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 rounded-full px-6 py-3 text-lg font-medium shadow border-black bg-[#BE5985] text-white w-fit'
+>
+  <FaWhatsapp className='text-xl' />
+  <span>Catálogo</span>
+</a>
+
         </div>
       </div>
 
