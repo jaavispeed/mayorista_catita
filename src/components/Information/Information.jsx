@@ -30,7 +30,7 @@ const Information = () => {
             </div>
 
             <div className='mt-12 text-center'>
-                <p className='text-lg text-[#BE5985]'>Si tienes más dudas, no dudes en <a href="/contacto" className='text-[#EC7FA9] font-semibold hover:underline'>contactarnos</a>.</p>
+                <p className='text-lg text-[#BE5985]'>Si tienes más dudas, no dudes en <a href="https://www.instagram.com/mayorista_catita/" className='text-[#EC7FA9] font-semibold hover:underline'>contactarnos</a>.</p>
             </div>
         </div>
     );
