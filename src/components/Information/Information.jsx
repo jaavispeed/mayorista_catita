@@ -1,24 +1,39 @@
-import React from 'react'
+import React from 'react';
 import { information } from "../../data/information.js";
+import { FaCamera, FaQuestionCircle, FaCheckCircle, FaTag, FaShoppingBag, FaDollarSign } from 'react-icons/fa'; // Nuevos íconos representativos
 
 const Information = () => {
     return (
-        <div className='flex items-center p-10 justify-center flex-col'>
-            <h2 className='font-extrabold text-3xl mb-8 pt-3'>¿Como comprar?</h2>
+        <div className='flex items-center justify-center flex-col min-h-screen bg-[#FFEDFA]'>
+            <h2 className='font-extrabold text-4xl mb-4 pt-3 text-[#EC7FA9]'>¿Cómo comprar?</h2>
+            <p className='text-lg text-[#BE5985] mb-12 max-w-2xl text-center'>
+                Aquí te explicamos paso a paso cómo realizar tu compra de forma rápida y segura. Sigue las instrucciones a continuación para completar tu pedido con facilidad.
+            </p>
 
-            <div className='mt-10 grid items-center grid-cols-1 gap-3 md:grid-cols-3 max-w-screen-xl'>
+            <div className='mt-10 grid items-center grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-screen-xl'>
                 {
-                    information.map((information, index) => (
-                        <div key={index} className='bg-white border border-indigo-400/30 rounded-lg shadow-lg p-6 h-full flex space-x-4'>
-                            <div className='font-semibold text-xl'>
-                                <h3 className='font-bold text-xl'>{information.title}</h3>
-                                <p className='text-gray-500'>{information.description}</p>
+                    information.map((info, index) => (
+                        <div key={index} className='bg-white border border-[#FFB8E0] rounded-lg shadow-lg p-6 h-full flex flex-col items-center space-y-4 hover:shadow-xl transition-all duration-300'>
+                            {/* Iconos con colores representativos */}
+                            {index === 0 && <FaCamera className='text-4xl text-[#3B82F6]' />} {/* Azul para captura de producto */}
+                            {index === 1 && <FaQuestionCircle className='text-4xl text-[#F97316]' />} {/* Naranja para pregunta */}
+                            {index === 2 && <FaCheckCircle className='text-4xl text-[#10B981]' />} {/* Verde para confirmación */}
+                            {index === 3 && <FaTag className='text-4xl text-[#BE5985]' />} {/* Rosa para precios mayoristas */}
+                            {index === 4 && <FaShoppingBag className='text-4xl text-[#3B82F6]' />} {/* Azul para compras sin mínimo */}
+                            {index === 5 && <FaDollarSign className='text-4xl text-[#10B981]' />} {/* Verde para métodos de pago */}
+
+                            <div className='text-center'>
+                                <h3 className='font-bold text-2xl text-[#BE5985]'>{info.description}</h3>
                             </div>
                         </div>
                     ))}
             </div>
-        </div>
-    )
-}
 
-export default Information
+            <div className='mt-12 text-center'>
+                <p className='text-lg text-[#BE5985]'>Si tienes más dudas, no dudes en <a href="/contacto" className='text-[#EC7FA9] font-semibold hover:underline'>contactarnos</a>.</p>
+            </div>
+        </div>
+    );
+};
+
+export default Information;
