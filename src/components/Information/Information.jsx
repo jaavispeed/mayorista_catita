@@ -1,26 +1,25 @@
 import React from 'react';
 import { information } from "../../data/information.js";
-import { FaCamera, FaQuestionCircle, FaCheckCircle, FaTag, FaShoppingBag, FaDollarSign } from 'react-icons/fa'; // Nuevos íconos representativos
+import { FaCamera, FaQuestionCircle, FaCheckCircle, FaTag, FaShoppingBag, FaDollarSign } from 'react-icons/fa';
 
 const Information = () => {
     return (
-        <div id='information' className='flex items-center justify-center flex-col min-h-screen bg-[#FFEDFA]'>
+        <div id='information' className='flex items-center justify-center flex-col min-h-screen'>
             <h2 className='font-extrabold text-4xl mb-4 pt-3 text-[#EC7FA9]'>¿Cómo comprar?</h2>
             <p className='text-lg text-[#BE5985] mb-12 max-w-2xl text-center'>
                 Aquí te explicamos paso a paso cómo realizar tu compra de forma rápida y segura. Sigue las instrucciones a continuación para completar tu pedido con facilidad.
             </p>
-
             <div className='mt-10 grid items-center grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-screen-xl'>
                 {
                     information.map((info, index) => (
                         <div key={index} className='bg-white border border-[#FFB8E0] rounded-lg shadow-lg p-6 h-full flex flex-col items-center space-y-4 hover:shadow-xl transition-all duration-300'>
-                            {/* Iconos con colores representativos */}
-                            {index === 0 && <FaCamera className='text-4xl text-[#3B82F6]' />} {/* Azul para captura de producto */}
-                            {index === 1 && <FaQuestionCircle className='text-4xl text-[#F97316]' />} {/* Naranja para pregunta */}
-                            {index === 2 && <FaCheckCircle className='text-4xl text-[#10B981]' />} {/* Verde para confirmación */}
-                            {index === 3 && <FaTag className='text-4xl text-[#BE5985]' />} {/* Rosa para precios mayoristas */}
-                            {index === 4 && <FaShoppingBag className='text-4xl text-[#3B82F6]' />} {/* Azul para compras sin mínimo */}
-                            {index === 5 && <FaDollarSign className='text-4xl text-[#10B981]' />} {/* Verde para métodos de pago */}
+                            {/* Iconos */}
+                            {index === 0 && <FaCamera className='text-4xl text-[#3B82F6]' />} 
+                            {index === 1 && <FaQuestionCircle className='text-4xl text-[#F97316]' />}
+                            {index === 2 && <FaCheckCircle className='text-4xl text-[#10B981]' />} 
+                            {index === 3 && <FaTag className='text-4xl text-[#BE5985]' />} 
+                            {index === 4 && <FaShoppingBag className='text-4xl text-[#3B82F6]' />} 
+                            {index === 5 && <FaDollarSign className='text-4xl text-[#10B981]' />} 
 
                             <div className='text-center'>
                                 <h3 className='font-bold text-2xl text-[#BE5985]'>{info.description}</h3>
