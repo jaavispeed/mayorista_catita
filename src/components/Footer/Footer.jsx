@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInstagram } from 'react-icons/fa';  // Importamos el ícono de Instagram
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';  
 
 const Footer = () => {
   return (
@@ -13,8 +13,14 @@ const Footer = () => {
               <a href="https://www.instagram.com/mayorista_catita/" target="_blank" rel="noopener noreferrer" className="hover:text-rose-500">
                 <FaInstagram className="inline-block text-3xl text-rose-700 hover:text-rose-500" />
               </a>
+              <span className="ml-2 text-rose-700">@mayorista_catita</span>
             </li>
-            {/* Puedes agregar más redes sociales con íconos similares */}
+            <li className="inline">
+              <a href="https://wa.me/56996189098" target="_blank" rel="noopener noreferrer" className="hover:text-rose-500">
+                <FaWhatsapp className="inline-block text-3xl text-rose-700 hover:text-rose-500" />
+              </a>
+              <span className="ml-2 text-rose-700">+56 9 9618 9098</span>
+            </li>
           </ul>
         </div>
 
