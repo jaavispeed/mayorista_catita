@@ -6,10 +6,10 @@ import Crops from '../../assets/Crops.jpg';
 
 const Hero = () => {
   return (
-    <section 
-      id='hero' 
+    <section
+      id='hero'
       className='hero-section flex flex-col md:flex-row items-center justify-center min-h-screen px-6 bg-gradient-to-b from-transparent via-[#FFEDFA] to-transparent'>
-      
+
       {/* Contenedor de texto alineado a la izquierda */}
       <div className='text-left max-w-lg'>
         <h1 className='text-4xl font-extrabold leading-[1.15] text-black sm:text-7xl' style={{ fontFamily: 'Caveat, cursive' }}>
@@ -25,15 +25,15 @@ const Hero = () => {
         </h2>
 
         <div className='mt-5'>
-        <a
-  href='https://www.whatsapp.com/catalog/56996189098/?app_absent=0'
-  target='_blank'
-  rel='noopener noreferrer'
-  className='transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 rounded-full px-6 py-3 text-lg font-medium shadow border-black bg-[#BE5985] text-white w-fit'
->
-  <FaWhatsapp className='text-xl' />
-  <span>Catálogo</span>
-</a>
+          <a
+            href='https://www.whatsapp.com/catalog/56996189098/?app_absent=0'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 rounded-full px-6 py-3 text-lg font-medium shadow border-black bg-[#BE5985] text-white w-fit'
+          >
+            <FaWhatsapp className='text-xl' />
+            <span>Catálogo</span>
+          </a>
 
         </div>
       </div>

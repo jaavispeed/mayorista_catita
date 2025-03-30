@@ -4,8 +4,8 @@ import { FaCamera, FaQuestionCircle, FaCheckCircle, FaTag, FaShoppingBag, FaDoll
 
 const Information = () => {
     return (
-        <div 
-            id='information' 
+        <div
+            id='information'
             className='flex items-center justify-center flex-col min-h-screen bg-gradient-to-b from-transparent via-[#FFEDFA] to-transparent'>
             <h2 className='font-extrabold text-4xl mb-4 pt-3 text-[#EC7FA9]'>¿Cómo comprar?</h2>
             <p className='text-lg text-[#BE5985] mb-12 max-w-2xl text-center'>
@@ -16,12 +16,12 @@ const Information = () => {
                     information.map((info, index) => (
                         <div key={index} className='bg-white border border-[#FFB8E0] rounded-lg shadow-lg p-6 h-full flex flex-col items-center space-y-4 hover:shadow-xl transition-all duration-300'>
                             {/* Iconos */}
-                            {index === 0 && <FaCamera className='text-4xl text-[#3B82F6]' />} 
+                            {index === 0 && <FaCamera className='text-4xl text-[#3B82F6]' />}
                             {index === 1 && <FaQuestionCircle className='text-4xl text-[#F97316]' />}
-                            {index === 2 && <FaCheckCircle className='text-4xl text-[#10B981]' />} 
-                            {index === 3 && <FaTag className='text-4xl text-[#BE5985]' />} 
-                            {index === 4 && <FaShoppingBag className='text-4xl text-[#3B82F6]' />} 
-                            {index === 5 && <FaDollarSign className='text-4xl text-[#10B981]' />} 
+                            {index === 2 && <FaCheckCircle className='text-4xl text-[#10B981]' />}
+                            {index === 3 && <FaTag className='text-4xl text-[#BE5985]' />}
+                            {index === 4 && <FaShoppingBag className='text-4xl text-[#3B82F6]' />}
+                            {index === 5 && <FaDollarSign className='text-4xl text-[#10B981]' />}
 
                             <div className='text-center'>
                                 <h3 className='font-bold text-2xl text-[#BE5985]'>{info.description}</h3>

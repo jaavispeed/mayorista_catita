@@ -3,16 +3,16 @@ import testimonialsData from '../../data/testimonials.js';
 
 const Testimonials = () => {
     return (
-        <section 
-            id='testimonials' 
+        <section
+            id='testimonials'
             className="flex items-center justify-center flex-col min-h-screen bg-gradient-to-b from-transparent via-[#FFEDFA] to-transparent">
             <h2 className="text-3xl font-bold text-center mt-20 mb-8">¿Qué dicen sobre nosotros?</h2>
             <p className="text-center mb-4 text-lg">
                 Más de 100 reseñas positivas, puedes verlas y dejar la tuya en nuestro post de Instagram{' '}
-                <a 
-                    href="https://www.instagram.com/p/C4tCE9hrrJd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                <a
+                    href="https://www.instagram.com/p/C4tCE9hrrJd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-blue-500 underline"
                 >
                     aquí

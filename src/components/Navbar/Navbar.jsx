@@ -47,7 +47,7 @@ const Navbar = () => {
                 <div>
                     <img src={Logo} alt='Logo del sitio' className='h-24 w-24' />
                 </div>
-                
+
                 {/* Boton hamburuesa */}
                 <button onClick={toggleMenu} className='md:hidden text-white'>
                     <svg className='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24'>

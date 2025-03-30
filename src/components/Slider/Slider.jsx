@@ -13,7 +13,7 @@ const Slider = ({ images }) => {
                 <div className='absolute inset-0 z-20 before:absolute before:left-0 before:top-0 before:w-1/4 before:h-full before:bg-gradient-to-r before:from-white before:to-transparent 
                 after:absolute after:right-0 after:top-0 after:bg-gradient-to-l after:h-full after:w-1/4 after:from-white after:to-transparent'></div>
 
-                <motion.div 
+                <motion.div
                     className='flex'
                     animate={{
                         x: ['0%', '-100%'],
