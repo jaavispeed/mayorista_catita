@@ -3,12 +3,11 @@ import { motion } from 'framer-motion'
 
 const Slider = ({ images }) => {
 
-    const imagesArr = [...images, ...images, ...images, ...images]
+    const imagesArr = [...images, ...images, ...images, ...images, ...images, ...images]
 
     return (
         <div className='mx-auto max-w-screen-xl'>
             {/* Título "Métodos de Pago" */}
-            <h2 className="text-center text-2xl font-semibold my-6">Métodos de Pago</h2>
 
             <div className='h-[200px] relative overflow-hidden'>
                 <div className='absolute inset-0 z-20 before:absolute before:left-0 before:top-0 before:w-1/4 before:h-full before:bg-gradient-to-r before:from-white before:to-transparent 
@@ -28,7 +27,7 @@ const Slider = ({ images }) => {
                 >
                     {imagesArr.map((image, index) => (
                         <div key={index} className='h-full flex-shrink-0'>
-                            <div className='flex items-center justify-center h-[200px]'>
+                            <div className='flex items-center justify-center h-[100px]'>
                                 <img
                                     src={image.logo}
                                     alt={image.name}

@@ -1,4 +1,7 @@
 import React from 'react'
+import Slider from '../Slider/Slider'
+import { paymentMethods } from "../../data/paymentMethods"
+
 
 const Hero = () => {
   return (
@@ -25,7 +28,10 @@ const Hero = () => {
           Catálogo
         </a>
       </div>
-    </section>
+      <div className="py-15">
+        <Slider images={paymentMethods} />
+      </div>
+      </section>
   )
 }
 
