@@ -7,20 +7,16 @@ function App() {
   return (
     <div className="overflow-hidden min-h-screen">
       <Navbar />
-      <hr className="border-t-2 border-gray-300 my-4" />
       <div className="py-8">
         <Hero />
       </div>
-      <hr className="border-t-2 border-gray-300 my-4" />
       <div className="py-8">
         <Information />
       </div>
-      <hr className="border-t-2 border-gray-300 my-4" />
       <div className="py-8">
         <Testimonials />
       </div>
-      <hr className="border-t-2 border-gray-300 my-4" />
-      <div className="py-8">
+      <div>
         <Footer />
       </div>
     </div>
