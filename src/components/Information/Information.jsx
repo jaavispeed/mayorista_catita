@@ -4,7 +4,9 @@ import { FaCamera, FaQuestionCircle, FaCheckCircle, FaTag, FaShoppingBag, FaDoll
 
 const Information = () => {
     return (
-        <div id='information' className='flex items-center justify-center flex-col min-h-screen'>
+        <div 
+            id='information' 
+            className='flex items-center justify-center flex-col min-h-screen bg-gradient-to-b from-transparent via-[#FFEDFA] to-transparent'>
             <h2 className='font-extrabold text-4xl mb-4 pt-3 text-[#EC7FA9]'>¿Cómo comprar?</h2>
             <p className='text-lg text-[#BE5985] mb-12 max-w-2xl text-center'>
                 Aquí te explicamos paso a paso cómo realizar tu compra de forma rápida y segura. Sigue las instrucciones a continuación para completar tu pedido con facilidad.
