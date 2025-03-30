@@ -13,17 +13,14 @@ function App() {
       <div className="py-8">
         <Hero />
       </div>
-      {/* 
-      <hr className="my-8 border-gray-300" />
-      <div className="py-8">
-        <Slider images={paymentMethods} />
-      <hr className="my-8 border-gray-300" />
-      </div>*/}
       <div className="py-8">
         <Information />
       </div>
       <div className="py-8">
         <Testimonials />
+      </div>
+      <div className="py-8">
+        <Slider images={paymentMethods} />
       </div>
       <div>
         <Footer />
