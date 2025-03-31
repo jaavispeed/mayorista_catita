@@ -1,31 +1,37 @@
 import React, { useState } from 'react'
+import { FaHome, FaTruck, FaRegStar, FaInfoCircle, FaBalanceScale } from 'react-icons/fa'
 import Logo from '../../assets/LogoLetras.png'
 
 const navbarLinks = [
     {
         id: 1,
         title: "Reseñas",
-        link: "#testimonials"
+        link: "#testimonials",
+        icon: <FaRegStar />
     },
     {
         id: 2,
         title: "Politicas",
-        link: "#politicas"
+        link: "#politicas",
+        icon: <FaBalanceScale />
     },
     {
         id: 3,
         title: "Inicio",
-        link: "#"
+        link: "#",
+        icon: <FaHome />
     },
     {
         id: 4,
         title: "¿Como comprar?",
-        link: "#information"
+        link: "#information",
+        icon: <FaInfoCircle />
     },
     {
         id: 5,
         title: "Envios",
-        link: "#envios"
+        link: "#envios",
+        icon: <FaTruck />
     },
 ]
 
@@ -53,7 +59,6 @@ const Navbar = () => {
     return (
         <nav className='fixed top-0 left-0 bg-[#BE5985] w-full z-50 shadow-xl'>
             <div className='flex justify-between items-center sm:px-12 sm:py-2 px-4 py-3'>
-
                 <div>
                     <img src={Logo} alt='Logo del sitio' className='h-24 w-24' />
                 </div>
@@ -61,7 +66,6 @@ const Navbar = () => {
                 {/* Boton hamburuesa */}
                 <button onClick={toggleMenu} className='md:hidden text-white'>
                     <svg className='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
-
                         {isOpen ? (<path
                             strokeLinecap='round'
                             strokeLinejoin='round'
@@ -80,9 +84,11 @@ const Navbar = () => {
                 <div className='hidden md:block'>
                     <ul className='flex sm:space-x-8 space-x-4'>
                         {navbarLinks.map((link) => (
-                            <li key={link.id}>
-                                <a className='text-white sm:text-lg text-sm hover:text-[#FFEDFA] transition-transform hover:scale-110 transform inline-block duration-300'
-                                    href={link.link}>{link.title}</a>
+                            <li key={link.id} className='flex items-center space-x-2'>
+                                <a className='text-white sm:text-lg text-sm hover:text-[#FFEDFA] transition-transform hover:scale-110 transform inline-flex items-center justify-center duration-300' href={link.link}>
+                                    {link.icon}
+                                    <span className="ml-2">{link.title}</span>
+                                </a>
                             </li>
                         ))}
                     </ul>
@@ -94,7 +100,7 @@ const Navbar = () => {
                         {navbarSocialLinks.map((link) => (
                             <li key={link.id}>
                                 <a
-                                    tarjet="_blank"
+                                    target="_blank"
                                     rel='noopener noreferrer'
                                     className='inline-block transition-transform hover:scale-125 transform duration-300'
                                     href={link.link}>
@@ -108,11 +114,15 @@ const Navbar = () => {
 
             {/* Navbar movil */}
             <div className={`md:hidden absolute w-full bg-[#BE5985] transition-all duration-300 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
-                <ul className='flex flex-col px-4 py-2'>
+                <ul className='flex flex-col items-center px-4 py-2'>
                     {navbarLinks.map((link) => (
-                        <li key={link.id} className='py-2 text-center'>
-                            <a className='text-white hover:text-[#E69DB8]' onClick={() => setIsOpen(false)}
-                                href={link.link}>{link.title}</a>
+                        <li key={link.id} className='py-2 flex items-center justify-center'>
+                            <a className='text-white hover:text-[#E69DB8]' onClick={() => setIsOpen(false)} href={link.link}>
+                                <div className="flex items-center">
+                                    {link.icon}
+                                    <span className="ml-2">{link.title}</span>
+                                </div>
+                            </a>
                         </li>
                     ))}
                 </ul>
@@ -121,7 +131,7 @@ const Navbar = () => {
                     {navbarSocialLinks.map((link) => (
                         <li key={link.id}>
                             <a
-                                tarjet="_blank"
+                                target="_blank"
                                 rel='noopener noreferrer'
                                 className='inline-block'
                                 href={link.link}
