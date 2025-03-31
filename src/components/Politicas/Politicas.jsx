@@ -14,10 +14,10 @@ const Politicas = () => {
   return (
     <div id='politicas' className="min-h-screen flex items-center justify-center px-4 py-10 md:px-10 bg-gradient-to-b from-transparent via-[#FFEDFA] to-transparent">
       <div className="max-w-5xl mx-auto p-10 md:p-8">
-        <h2 className="text-4xl font-extrabold">
+        <h2 className="text-4xl font-extrabold mb-8">
           Políticas de la Tienda
         </h2>
-        <p className="text-sm md:text-lg text-[#BE5985] mb-6 md:mb-10">
+        <p className="text-2xl text-[#BE5985] mb-16">
           Asegúrate de conocer nuestras políticas antes de realizar una compra. Aquí encontrarás información sobre garantías, devoluciones y envíos.
         </p>
 
