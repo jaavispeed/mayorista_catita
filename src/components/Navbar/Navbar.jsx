@@ -17,6 +17,11 @@ const navbarLinks = [
         title: "¿Como comprar?",
         link: "#information"
     },
+    {
+        id: 3,
+        title: "Envios",
+        link: "#envios"
+    },
 ]
 
 const navbarSocialLinks = [

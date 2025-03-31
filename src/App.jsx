@@ -18,6 +18,12 @@ function App() {
       <div className="py-8">
         <Information />
       </div>
+
+    <div>
+      <Envios />
+    </div>
+
+
       <div className="py-8">
         <Testimonials />
       </div>
@@ -25,8 +31,8 @@ function App() {
         <Slider images={paymentMethods} />
       </div>
 
-  
 
+    
 
       <div>
         <Footer />
