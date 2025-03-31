@@ -5,6 +5,8 @@ import Testimonials from "./components/Testimonials/Testimonials"
 import Footer from "./components/Footer/Footer"
 import Slider from "./components/Slider/Slider"
 import { paymentMethods } from "./data/paymentMethods"
+import Envios from "./components/Envios/Envios"
+import Politicas from "./components/Politicas/Politicas"
 
 function App() {
   return (
@@ -22,6 +24,10 @@ function App() {
       <div className="py-8">
         <Slider images={paymentMethods} />
       </div>
+
+  
+
+
       <div>
         <Footer />
       </div>
