@@ -9,16 +9,21 @@ const navbarLinks = [
     },
     {
         id: 2,
+        title: "Politicas",
+        link: "#politicas"
+    },
+    {
+        id: 3,
         title: "Inicio",
         link: "#"
     },
     {
-        id: 3,
+        id: 4,
         title: "¿Como comprar?",
         link: "#information"
     },
     {
-        id: 3,
+        id: 5,
         title: "Envios",
         link: "#envios"
     },

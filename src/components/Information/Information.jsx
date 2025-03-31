@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCamera, FaQuestionCircle, FaCheckCircle, FaTag, FaShoppingBag, FaDollarSign } from 'react-icons/fa';
+import { FaCamera, FaQuestionCircle, FaCheckCircle, FaTag, FaShoppingBag } from 'react-icons/fa';
 
 const Information = () => {
   const infoItems = [
