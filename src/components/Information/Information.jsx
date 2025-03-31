@@ -11,17 +11,17 @@ const Information = () => {
   ];
 
   return (
-    <div className='min-h-screen bg-gradient-to-b from-transparent via-[#FFEDFA] to-transparent'>
-      <div className='max-w-4xl mx-auto p-8'>
+    <div id='information' className='h-screen flex items-center justify-center bg-gradient-to-b from-transparent via-[#FFEDFA] to-transparent'>
+      <div className='max-w-4xl p-8'>
         <h2 className='text-4xl font-semibold mb-8'>¿Cómo comprar?</h2>
         <p className='text-2xl text-[#BE5985] mb-16'>
           Aquí te explicamos paso a paso cómo realizar tu compra de forma rápida y segura. Sigue las instrucciones a continuación para completar tu pedido con facilidad.
         </p>
-        <div className='p-8 shadow-lg border rounded-lg space-y-6'>
+        <div className='p-8 shadow-lg border rounded-lg space-y-6 bg-white'>
           {infoItems.map((item, index) => (
             <div key={index} className='flex items-center space-x-6'>
               {item.icon}
-              <p className='text-xl text-gray-700'>{item.text}</p>
+              <p className='text-xl text-gray-700 text-left'>{item.text}</p>
             </div>
           ))}
         </div>
