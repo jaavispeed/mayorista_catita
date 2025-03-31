@@ -19,9 +19,11 @@ const Information = () => {
         </p>
         <div className='p-8 shadow-lg border rounded-lg space-y-6 bg-white'>
           {infoItems.map((item, index) => (
-            <div key={index} className='flex items-center space-x-6'>
-              {item.icon}
-              <p className='text-xl text-gray-700 text-left'>{item.text}</p>
+            <div key={index} className='flex items-center justify-start space-x-4 sm:space-x-6 w-full'>
+              <div className='icon-container'>
+                {item.icon}
+              </div>
+              <p className='text-lg sm:text-xl text-gray-700'>{item.text}</p>
             </div>
           ))}
         </div>
