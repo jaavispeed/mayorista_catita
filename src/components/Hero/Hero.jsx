@@ -32,7 +32,7 @@ const Hero = () => {
             className='transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 rounded-full px-6 py-3 text-lg font-medium shadow border-black bg-[#BE5985] text-white w-fit'
           >
             <FaWhatsapp className='text-xl' />
-            <span>Catálogo</span>
+            <span>Compra aquí</span>
           </a>
 
         </div>
