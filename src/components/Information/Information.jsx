@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaCamera, FaQuestionCircle, FaCheckCircle, FaTag, FaShoppingBag, FaDollarSign } from 'react-icons/fa';
-import Envios from '../Envios/Envios';
 
 const Information = () => {
   const infoItems = [
@@ -14,8 +13,8 @@ const Information = () => {
   return (
     <div className='min-h-screen bg-gradient-to-b from-transparent via-[#FFEDFA] to-transparent'>
       <div className='max-w-4xl mx-auto p-8'>
-        <h2 className='text-4xl font-semibold mb-8 text-center'>¿Cómo comprar?</h2>
-        <p className='text-2xl text-[#BE5985] mb-16 text-center'>
+        <h2 className='text-4xl font-semibold mb-8'>¿Cómo comprar?</h2>
+        <p className='text-2xl text-[#BE5985] mb-16'>
           Aquí te explicamos paso a paso cómo realizar tu compra de forma rápida y segura. Sigue las instrucciones a continuación para completar tu pedido con facilidad.
         </p>
         <div className='p-8 shadow-lg border rounded-lg space-y-6'>
